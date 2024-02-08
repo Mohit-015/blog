@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link rel="icon" href="/img/faviconmain.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="cssblog/login.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body class="login-page">
+    <section class="window">
+     <h1 class="text">LOGIN</h1>
+     <form action="#" method="post">
+        <div class="user"></div>
+            
+            <!-- <label for="idform"><i class="fa fa-user" aria-hidden="true"></i></label> -->
+            <input  id="luser" type=" text" placeholder="Email / Username"name="idform">
+        </div>
+            <div class="pass">   
+            <input id="lpass" type="password" placeholder="Password "name="idform">
+            </div>
+        </form>
+     
+     <div>
+        <center><button id="lbtn" class="button"><i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; LOGIN</button></center>
+     </div>
+     <div class="fr"><a class="fr" href="./myfeed.html">Return To Home?</a></div>
+     <div class="Cr"><p>Don't have any account? <a id="Cr" href="#">Create new </a></p></div>
+    </section>
+    <div class="overlay d-none" id="popup">
+        <section class="form">
+            <section>
+                <h3 class="head">Create New Account</h3>
+            </section>
+            <div class="data">
+                <form action="#" method="post">
+                <!-- <p id="name"> -->
+                    <input id="fullname" type=" text" placeholder="Enter Full Name"name="name">
+                <!-- </p> -->
+                <!-- <p id="Email"> -->
+                    <input id="Email" type=" text" placeholder="Enter Your Email"name="name">
+                <!-- </p> -->
+                <!-- <p id="mobile"> -->
+                    <input id="mobile" type=" text" placeholder="Mobile No."name="">
+                <!-- </p> -->
+                <!-- <p id="security1"> -->
+                    <input id="security1" type="password" placeholder="Enter Password"name="name">
+                <!-- </p> -->
+                <!-- <p id="security2"> -->
+                    <input id="security2" type="password" placeholder="Confirm Password"name="name">
+                <!-- </p> -->
+            </form>
+            </div>
+            <center><button id="save" class="save">Save</button></center>
+            <center><button id="can" class="can">Cancel</button></center>
+            <center>Already have an account?<a id="not" class="not" href=""> Login</a></center>
+        </section>
+     
+    </div>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./jsblog/util.js"></script>
+    <script src="./jsblog/login.js"></script>
+</body>
+</html> 

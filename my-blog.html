@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Blog</title>
+    <link rel="icon" href="/img/faviconmain.ico"/>
+    <link rel="stylesheet" href="./cssblog/my-blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- navbar -->
+        <header>
+            <section  class="header">
+                <h4 class="brand">45Tech.io</h4>
+                <ul class="menu">
+                    <li><a href="./myfeed.html" class="anchort">Feed</a></li>
+                    <li><a href="./my-blog.html" class="anchort">My Blogs</a></li>
+                    <li><a href="./aboutus.html" class="anchort">About Us</a></li>
+                    <li><a href="./contactus.html" class="anchort">Contact</a></li>
+                </ul>
+                <p class="write-but">
+                    <button class="log" id="log">login &nbsp;<i class="fa fa-user" aria-hidden="true"></i></button>
+                    <!-- <span id="log" class="log"></span>&nbsp;<i class="fa fa-user" aria-hidden="true"></i></button> -->
+                    <button class="write" type="button" onclick="location.href='./blogwrite.html'">Write 
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
+                </p>
+            </section>
+        </header>
+        <section class="bbg" id="dyn-blog"></section>
+    </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/util.js"></script>
+    <script src="./jsblog/my-blog.js"></script>
+</body>
+
+</html>
